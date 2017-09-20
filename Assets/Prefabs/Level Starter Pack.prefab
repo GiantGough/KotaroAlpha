@@ -619,7 +619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1965253016166762
 GameObject:
   m_ObjectHideFlags: 1
@@ -694,7 +694,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654410913925264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.02, y: 4.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4686940859372204}
@@ -720,7 +720,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305839158708962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 23.83, y: -0.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4178338292065966}
@@ -764,7 +764,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312562443569750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.86, y: -0.4, z: 0}
+  m_LocalPosition: {x: 35.1, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4417129113068302}
@@ -845,7 +845,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1246585757706842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.02, y: 4.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4686940859372204}
@@ -906,7 +906,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5019608, g: 0.59607846, b: 0.6509804, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2216,10 +2216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f53f1edbc4bc3d4aa9a83a4c3bd50f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 7
   myRigidbody: {fileID: 0}
   canMove: 0
-  jumpSpeed: 5
+  jumpSpeed: 7
   groundCheck: {fileID: 4417129113068302}
   groundCheckradius: 0.25
   whatIsGround:
@@ -2234,6 +2234,8 @@ MonoBehaviour:
   invincibilityLength: 1
   jumpSound: {fileID: 82988929946689462}
   hurtSound: {fileID: 82828240215327546}
+  onLadder: 0
+  climbSpeed: 5
 --- !u!114 &114630888850552724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2615,7 +2617,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 414093958
+  randomSeed: 819833620
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6480,7 +6482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50.055, y: 11.9}
+  m_AnchoredPosition: {x: 50.055, y: 11.61}
   m_SizeDelta: {x: 100.11, y: 23.800003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224933367532390400

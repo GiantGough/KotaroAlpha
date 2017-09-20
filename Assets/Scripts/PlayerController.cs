@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	public bool isGrounded;
 
+	//
 	private Animator myAnim;
 
 	public Vector3 respawnPosition;
@@ -38,6 +39,15 @@ public class PlayerController : MonoBehaviour {
 	public AudioSource jumpSound;
 	public AudioSource hurtSound;
 
+	//On ladder check
+	public bool onLadder;
+	public float climbSpeed;
+	private float climbVelocity;
+	private float gravityStore;
+
+	//animation paramater test
+	public bool isClimbing;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -50,6 +60,9 @@ public class PlayerController : MonoBehaviour {
 		theLevelManager = FindObjectOfType<LevelManager> ();
 
 		canMove = true;
+
+		//ladder gravity set up
+		gravityStore = myRigidbody.gravityScale;
 	}
 	
 	// Update is called once per frame
@@ -83,6 +96,8 @@ public class PlayerController : MonoBehaviour {
 				jumpSound.Play ();
 			}
 
+
+
 			//sets invincibilty counter after being knockedback
 			if (invincibilityCounter > 0) 
 			{
@@ -106,9 +121,10 @@ public class PlayerController : MonoBehaviour {
 				myRigidbody.velocity = new Vector3 (knockbackForce, knockbackForce, 0f);
 			}
 		}
-
+			
 		myAnim.SetFloat ("Speed", Mathf.Abs (myRigidbody.velocity.x));
 		myAnim.SetBool ("Grounded", isGrounded);
+
 
 		//turns on stompbox only when moving down
 		if (myRigidbody.velocity.y < 0) {
@@ -117,6 +133,36 @@ public class PlayerController : MonoBehaviour {
 			stompBox.SetActive (false);
 		}
 
+		//ladder code
+		if (onLadder) 
+		{
+			myRigidbody.gravityScale = 0f;
+
+			climbVelocity = climbSpeed * Input.GetAxisRaw ("Vertical");
+
+			myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, climbVelocity);
+		}
+
+		if (!onLadder) 
+		{
+			myRigidbody.gravityScale = gravityStore;
+		}
+
+		//climbing animation paramater test
+		if (climbVelocity > 0) {
+			isClimbing = true;
+		} else if (climbVelocity < 0) {
+			isClimbing = true;
+		}
+		else {
+			isClimbing = false;
+		}
+
+
+		//myAnim.SetFloat ("Climb Speed", Mathf.Abs (myRigidbody.velocity.x));
+		myAnim.SetBool ("On Ladder", onLadder);
+
+		myAnim.SetBool ("isClimbing", isClimbing);
 
 	}
 

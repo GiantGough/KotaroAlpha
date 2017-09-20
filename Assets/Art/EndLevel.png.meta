@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: 0844118c8c22a2144a7314f28d22ef82
-timeCreated: 1501289263
+guid: 36fd2a2f54239af4fad159074e56af55
+timeCreated: 1501384546
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: backgrounds_0
-    21300002: backgrounds_1
-    21300004: backgrounds_2
-    21300006: backgrounds_3
-    21300008: backgrounds_4
+    21300000: EndLevel_0
+    21300002: EndLevel_1
+    21300004: EndLevel_2
+    21300006: EndLevel_3
+    21300008: EndLevel_4
+    21300010: EndLevel_5
+    21300012: EndLevel_6
+    21300014: EndLevel_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -50,7 +53,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 21
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -61,7 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 8192
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -69,7 +72,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 8192
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -80,55 +83,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: backgrounds_0
+      name: EndLevel_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 126
-        width: 231
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: backgrounds_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 63
-        width: 231
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: backgrounds_2
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 231
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: backgrounds_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 175
-        width: 16
-        height: 14
+        width: 241
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,13 +97,97 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: backgrounds_4
+      name: EndLevel_1
       rect:
         serializedVersion: 2
-        x: 108
-        y: 132
-        width: 20
-        height: 20
+        x: 264
+        y: 0
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 0
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_3
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 257
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_5
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 0
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_6
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 0
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EndLevel_7
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 0
+        width: 241
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -36,6 +36,7 @@ public class LevelEnd : MonoBehaviour {
 		theLevelManager = FindObjectOfType<LevelManager>();
 
 		theSpriteRenderer = GetComponent<SpriteRenderer> ();
+
 	}
 	
 	// Update is called once per frame
@@ -52,9 +53,9 @@ public class LevelEnd : MonoBehaviour {
 	{
 
 		//Instantiate (endLevelSplosion, levelEnd.transform.position, 0f);
-
-		//allows assigning of sprite?
 		theSpriteRenderer.sprite = flagOpen;
+		
+
 
 		if (other.tag == "Player") 
 		{

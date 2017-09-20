@@ -22,13 +22,13 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 
 		if (followTarget) {
-			targetPosition = new Vector3 (target.transform.position.x, transform.position.y, transform.position.z);
+			targetPosition = new Vector3 (target.transform.position.x, transform.position.y + 10, transform.position.z);
 
 			// this moves target of the camera ahead of the player
 			if (target.transform.localScale.x > 0f) {
-				targetPosition = new Vector3 (target.transform.position.x, Mathf.Clamp (target.transform.position.y, -50f, 20f), transform.position.z);
+				targetPosition = new Vector3 (target.transform.position.x, Mathf.Clamp (target.transform.position.y, -15.6f, 20f), transform.position.z);
 			} else {
-				targetPosition = new Vector3 (target.transform.position.x, Mathf.Clamp (target.transform.position.y, -50f, 20f), transform.position.z);
+				targetPosition = new Vector3 (target.transform.position.x, Mathf.Clamp (target.transform.position.y, -15.6f, 20f), transform.position.z);
 			}
 
 			//transform.position = targetPosition;
